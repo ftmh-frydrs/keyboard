@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./content/css/style.css">
+    <title>keyboard</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        title: 'mintcream',
+                        li: 'rgba(0, 0, 0, 0.7)',
+                        pinky:'crimson',
+                        ring:'coral',
+                        middle:'darkorange',
+                        gold:'gold',
+                        khaki:'khaki',
+                        slategray:'slategrey',
+                    },
+                    lineHeight: {
+                        'extra-loose': '2.5',
+                        '14': '4em',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-black flex flex-col justify-content-center align-items-center text-2xl h-screen">
+    <h1 class="title text-title uppercase mt-2 mb-2 text-lg tracking-wide mt-20"></h1>
+    <div class="keyboard flex flex-col">
+        <ul class="flex list-none">
+            <li class="bg-pinky h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="esc">~</li>
+            <li class="bg-pinky h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="1">1</li>
+            <li class="bg-ring h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="2">2</li>
+            <li class="bg-middle h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="3">3</li>
+            <li class="pointer1st bg-gold h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="4">4</li>
+            <li class="pointer2nd bg-khaki h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="5">5</li>
+            <li class="pointer2nd bg-khaki h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="6">6</li>
+            <li class="pointer1st bg-gold h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="7">7</li>
+            <li class="bg-middle h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="8">8</li>
+            <li class="bg-ring h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="9">9</li>
+            <li class="bg-pinky h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="10">0</li>
+            <li class="bg-pinky h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14">-</li>
+            <li class="bg-pinky h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14">+</li>
+            <li class="bg-pinky h-14 w-28 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="delete">delete</li>
+        </ul>
+        <ul class="flex list-none">
+            <li class="bg-pinky h-14 w-28 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="tab">TAB</li>
+            <li class="bg-pinky h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="Q">Q</li>
+            <li class="bg-ring h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="W">W</li>
+            <li class="bg-middle h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="E">E</li>
+            <li class="pointer1st h-14 w-14 bg-gold text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="R">R</li>
+            <li class="pointer2nd bg-khaki h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="T">T</li>
+            <li class="pointer2nd bg-khaki h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="Y">Y</li>
+            <li class="pointer1st bg-gold h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="U">U</li>
+            <li class="bg-middle h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="I">I</li>
+            <li class="bg-ring h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="O">O</li>
+            <li class="bg-pinky h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="P">P</li>
+            <li class="bg-pinky h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14">[</li>
+            <li class="bg-pinky h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14">]</li>
+            <li class="bg-pinky h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14">\</li>
+        </ul>
+        <ul class="flex list-none">
+            <li class="bg-pinky h-14 w-28 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="caps">CAPS</li>
+            <li class="bg-pinky h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="A">A</li>
+            <li class="bg-ring h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="S">S</li>
+            <li class="bg-middle h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="D">D</li>
+            <li class="pointer1st bg-gold h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="F">F</li>
+            <li class="pointer2nd bg-khaki h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="G">G</li>
+            <li class="pointer2nd bg-khaki h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="H">H</li>
+            <li class="pointer1st bg-gold h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="J">J</li>
+            <li class="bg-middle h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="K">K</li>
+            <li class="bg-ring h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="L">L</li>
+            <li class="bg-pinky h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14">:</li>
+            <li class="bg-pinky h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14">''</li>
+            <li class="bg-pinky h-14 w-32 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="return">return</li>
+        </ul>
+        <ul class="flex list-none">
+            <li class="bg-pinky h-14 w-40 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="left-shift">SHIFT</li>
+            <li class="bg-pinky h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="Z">Z</li>
+            <li class="bg-ring h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="X">X</li>
+            <li class="bg-middle h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="C">C</li>
+            <li class="pointer1st bg-gold h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="V">V</li>
+            <li class="pointer2nd bg-khaki h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="B">B</li>
+            <li class="pointer2nd bg-khaki h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="N">N</li>
+            <li class="pointer1st bg-gold h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="M">M</li>
+            <li class="bg-middle h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14">,</li>
+            <li class="bg-ring h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14">.</li>
+            <li class="bg-pinky h-14 w-14 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14">;</li>
+            <li class="bg-pinky  h-14 w-40 text-li rounded-lg tracking-winde m-2 text-center text-sm duration-300 align-items-center justify-content-center leading-14" id="right-shift">SHIFT</li>
+        </ul>
+    </div>
+    <h1 class="title text-title uppercase mt-20 mb-5 text-2xl tracking-widest text-center">Hands on the keyboard</h1>
+
+    <script src="./content/script/script.js"></script>
+</body>
+</html>
